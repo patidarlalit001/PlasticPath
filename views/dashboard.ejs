@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<%- include('partials/navbar') %>
+
+<div class="max-w-6xl mx-auto mt-14">
+
+<h2 class="text-3xl font-bold mb-10">
+Welcome, <%= user.name %>
+</h2>
+
+<div class="grid grid-cols-2 gap-10">
+
+<% if(user.role === "user"){ %>
+
+<div class="bg-white p-10 rounded-xl shadow">
+
+<h3 class="text-xl font-bold mb-4">Report Plastic</h3>
+
+<p class="text-gray-600 mb-6">
+Notify collectors about plastic waste in your village.
+</p>
+
+<a href="/report"
+class="bg-green-600 text-white px-6 py-3 rounded-lg">
+Submit Report
+</a>
+
+</div>
+
+<% } %>
+
+<% if(user.role === "collector"){ %>
+
+<div class="bg-white p-10 rounded-xl shadow">
+
+<h3 class="text-xl font-bold mb-4">View Reports</h3>
+
+<p class="text-gray-600 mb-6">
+See villages where plastic collection is required.
+</p>
+
+<a href="/reports"
+class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+View Reports
+</a>
+
+</div>
+
+<% } %>
+
+</div>
+
+</div>
+
+</body>
+</html>

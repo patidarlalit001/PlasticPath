@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1773424985688,
+      "name": "LALIT PATIDAR",
+      "phone": "9685803513",
+      "email": "patidarlalit710@gmail.com",
+      "role": "user",
+      "password": "$2b$10$RnAU0CnkorVUvTgV2HCzWO2YJdA/rdzzYTvgpMq2JwckUxlHikCRu"
+    },
+    {
+      "id": 1773425041424,
+      "name": "LALIT PATIDAR",
+      "phone": "9685803514",
+      "email": "patidarlalit910@gmail.com",
+      "role": "collector",
+      "password": "$2b$10$muM3Q/pmvwetIlQgHnto/uOVXar4bvkluxgEy0Pi7NwxMkQMkMeRC"
+    }
+  ],
+  "reports": [
+    {
+      "id": 1773425000200,
+      "village": "raipur",
+      "quantity": "345",
+      "reporter": "LALIT PATIDAR",
+      "phone": "9685803513",
+      "email": "patidarlalit710@gmail.com"
+    }
+  ]
+}

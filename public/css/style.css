@@ -1,0 +1,15 @@
+body{
+font-family:Arial;
+margin:40px;
+}
+
+h1{
+color:green;
+}
+
+button{
+padding:10px 20px;
+background:green;
+color:white;
+border:none;
+}
